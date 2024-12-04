@@ -1,9 +1,33 @@
-# Node.js
-node_modules/
-npm-debug.log
+# Ignorar el entorno virtual
+backend/venv/
 
-# Python
-__pycache__/
+# Archivos compilados de Python
 *.pyc
 *.pyo
-.env
+__pycache__/
+
+# Configuración específica del editor
+.vscode/
+.idea/
+
+# Archivos de dependencias binarias o de cache
+*.log
+*.sqlite3
+
+# Archivos sensibles o temporales
+*.env
+*.DS_Store
+
+# Archivos específicos del sistema operativo
+Thumbs.db
+
+# Ignorar imágenes o datos grandes (si son solo para desarrollo local)
+backend/app/images/
+backend/app/models/embeddings.npy
+backend/app/models/image_paths.txt
+
+# Ignorar node_modules en el frontend
+frontend/node_modules/
+
+# Ignorar la carpeta build del frontend (generada tras el build)
+frontend/build/
